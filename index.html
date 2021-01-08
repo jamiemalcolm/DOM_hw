@@ -4,19 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minipulating Dom</title>
+  <title></title>
   <script src="js/app.js"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 
 <body>
-  <h1>Welcome To the DOM</h1>
-
-
+  <h1>Favourite Basketball Players 🏀 </h1>
   <!-- Create a form in HTML with inputs for relevant data -->
+  <form id="new-item-form">
+    <div id="form">
+      <div class="form-item">
+        <label for="first-name" class="labels">First Name</label>
+        <input type="text" id="first" required />
+        <label for="last-name" class="labels">Last Name</label>
+        <input type="text" id="last" required />
+      </div>
+      <div class="form-item">
+        <label for="positionChoice1" class="labels">Point Guard</label>
+        <input type="radio" id="positionChoice1" name="position" value="point guard" required />
 
+        <label for="positionChoice2" class="labels">Shooting Guard</label>
+        <input type="radio" id="positionChoice2" name="position" value="shooting guard">
+
+        <label for="positionChoice3" class="labels">Small Forward</label>
+        <input type="radio" id="positionChoice3" name="position" value="small Forward">
+
+        <label for="positionChoice4" class="labels">Power Forward</label>
+        <input type="radio" id="positionChoice1" name="position" value="power forward">
+
+        <label for="positionChoice5" class="labels">Centre</label>
+        <input type="radio" id="positionChoice2" name="position" value="centre">
+      </div>
+
+      <div class="form-item">
+        <label for="team" class="labels">Plays for</label>
+        <input type="text" id="team" required />
+      </div>
+    </div>
+    <input type="submit" value="save" />
+    <button id="delete-all">Delete All</button>
+  </form>
 
   <!-- Create a list in HTML -->
+  <h1>List of Favourite Players</h1>
+  <ul id="player-list"></ul>
 
   <!-- Add a "Delete All" <button> which clears all of the list items from the list -->
 </body>
