@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit);
+  const deleteButton = document.querySelector('#delete-all');
+  deleteButton.addEventListener('click', handleDeleteButton);
 
 });
 // When the form is submitted, 
@@ -25,19 +27,22 @@ const createNewListItem = (form) =>{
   name.textContent = `${form.first.value} ${form.last.value}`;
   newListItem.appendChild(name);
 
-  // const lastName = document.createElement('h4');
-  // lastName.textContent = form.last.value;
-  // newListItem.appendChild(lastName);
-
   
-  const team = document.createElement('h5');
+  const team = document.createElement('h4');
   team.textContent = form.team.value;
   newListItem.appendChild(team);
   
+  const position = document.createElement('h4');
+  position.textContent = form.position.value;
+  newListItem.appendChild(position);
+
   return newListItem;
-  // const position = document.createElement('h3');
 }
 
+const handleDeleteButton = (e) => {
+  const playerList = document.querySelector('#player-list');
+  playerList.innerHTML = '';
+}
 
 
 // Append the submitted data to the list
