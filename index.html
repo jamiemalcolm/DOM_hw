@@ -11,7 +11,6 @@
 
 <body>
   <h1>Favourite Basketball Players 🏀 </h1>
-  <!-- Create a form in HTML with inputs for relevant data -->
   <form id="new-item-form">
     <div id="form">
       <div class="form-item">
@@ -21,36 +20,72 @@
         <input type="text" id="last" required />
       </div>
       <div class="form-item">
-        <label for="positionChoice1" class="labels">Point Guard</label>
-        <input type="radio" id="positionChoice1" name="position" value="point guard" required />
+        <span class="radio-input">
+          <input type="radio" id="positionChoice1" name="position" value="point guard" required />
+          <span class="radio-control">
+          </span>
+        </span>
+        <span class="r-label">
+          <label for="positionChoice1" class="labels">Point Guard</label>
+        </span>
 
-        <label for="positionChoice2" class="labels">Shooting Guard</label>
-        <input type="radio" id="positionChoice2" name="position" value="shooting guard">
+        <span class="radio-input">
+          <input type="radio" id="positionChoice2" name="position" value="shooting guard">
+          <span class="radio-control">
+          </span>
+        </span>
+        <span class="r-label">
+          <label for="positionChoice2" class="labels">Shooting Guard</label>
+        </span>
 
-        <label for="positionChoice3" class="labels">Small Forward</label>
-        <input type="radio" id="positionChoice3" name="position" value="small Forward">
+        <span class="radio-input">
+          <span class="radio-control">
+          </span>
+          <input type="radio" id="positionChoice3" name="position" value="small Forward">
+        </span>
+        <span class="r-label">
+          <label for="positionChoice3" class="labels">Small Forward</label>
+        </span>
 
-        <label for="positionChoice4" class="labels">Power Forward</label>
-        <input type="radio" id="positionChoice1" name="position" value="power forward">
+        <span class="radio-input">
+          <input type="radio" id="positionChoice4" name="position" value="power forward">
+          <span class="radio-control">
+          </span>
+        </span>
+        <span class="r-label">
+          <label for="positionChoice4" class="labels">Power Forward</label>
+        </span>
 
-        <label for="positionChoice5" class="labels">Centre</label>
-        <input type="radio" id="positionChoice2" name="position" value="centre">
+        <span class="radio-input">
+          <input type="radio" id="positionChoice5" name="position" value="centre">
+          <span class="radio-control">
+          </span>
+        </span>
+        <span class="r-label">
+          <label for="positionChoice5" class="labels">Centre</label>
+        </span>
       </div>
 
       <div class="form-item">
         <label for="team" class="labels">Plays for</label>
         <input type="text" id="team" required />
       </div>
+      <input id="submit" type="submit" value="save" />
+      <button id="delete-all">Delete All</button>
+      <div class="form-item">
+        <input id="s1" type="checkbox" class="switch">
+        <label for="s1">Still Playing?</label>
+      </div>
     </div>
-    <input type="submit" value="save" />
   </form>
-  <button id="delete-all">Delete All</button>
 
-  <!-- Create a list in HTML -->
-  <h1>List of Favourite Players</h1>
-  <ul id="player-list"></ul>
 
-  <!-- Add a "Delete All" <button> which clears all of the list items from the list -->
+  <div class="list-title">
+    <h1>List of Favourite Players</h1>
+  </div>
+  <div class="list-container">
+    <ul id="player-list"></ul>
+  </div>
 </body>
 
 </html>

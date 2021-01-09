@@ -1,0 +1,43 @@
+body{
+  background-color: #0D3B66;
+  color: #FAF0CA;
+  
+  
+}
+h1{
+  text-align: center;
+}
+#form, #delete-all{
+  text-align: center;
+}
+input, #delete-all{
+  background-color: #98D0E9;
+  border: none;
+  border-radius: 5px;
+}
+
+/* .list-container{
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-auto-flow: row;
+  
+} */
+#player-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  gap: 20px
+}
+
+.player-list-item{
+  margin: 20px;
+  background-color: #F95738;
+  color: #0D3B66;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  padding-top: 2px;
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+}
