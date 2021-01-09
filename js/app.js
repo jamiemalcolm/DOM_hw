@@ -36,6 +36,8 @@ const createNewListItem = (form) =>{
   position.textContent = form.position.value;
   newListItem.appendChild(position);
 
+  console.log(form.stillPlaying.value);
+
   return newListItem;
 }
 
