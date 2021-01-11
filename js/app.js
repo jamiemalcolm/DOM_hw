@@ -31,12 +31,17 @@ const createNewListItem = (form) =>{
   const team = document.createElement('h4');
   team.textContent = form.team.value;
   newListItem.appendChild(team);
+
   
+  // this is the radio button 
   const position = document.createElement('h4');
   position.textContent = form.position.value;
   newListItem.appendChild(position);
 
-  console.log(form.stillPlaying.value);
+  const stillPlaying = document.createElement('h4');
+  stillPlaying.textContent = form.stillPlaying.value;
+  newListItem.appendChild(stillPlaying);
+
 
   return newListItem;
 }
